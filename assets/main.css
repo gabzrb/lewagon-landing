@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700|Archivo:400,700|Roboto:400,700");
+
+ @font-face { font-family: CircularStd-Black; src: url('CircularStd-Black.ttf'); }
+ @font-face { font-family: SFProText-Bold; src: url('SFProText-Bold.otf'); }
+ @font-face { font-family: SFProText-Light; src: url('SFProText-Light.otf'); }
+ @font-face { font-family: SFProText-Regular; src: url('SFProText-Regular.otf'); }
 html {
   overflow-x: hidden;
 }
@@ -22,7 +27,7 @@ body {
 h1, h2, h3, h4 {
   font-size: 38px;
   font-weight: 700;
-  font-family: "Roboto Mono", monospace;
+  font-family: "SFProText-Bold";
 }
 
 
@@ -42,13 +47,30 @@ h1, h2, h3, h4 {
 
 }
 
+
+.banner2 {
+
+  text-align: center;
+  height: 60vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+}
+
 .color-overlay {
    background-color: #5f460f;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     opacity: 0.5;
 
 }
@@ -64,7 +86,7 @@ h1, h2, h3, h4 {
   }
 
 .video-content {
-  position: fixed;
+  position: absolute;
 display: block;
 align-content: center;
 justify-content: center;
@@ -80,18 +102,23 @@ justify-content: center;
   color: white;
 }
 .writing-content h1 {
- font-family: "Archivo", monospace;
+ font-family: "CircularStd-Black";
  letter-spacing: 18px;
  font-size: 87px;
 
 }
 
+.writing-content h2 h3 {
+ font-family: "SFProText-Regular";
+
+}
+
 
 .writing-content p {
- font-family: "Archivo", monospace;
-font-size: 20px;
-text-align: center;
-letter-spacing: 3px;
+ font-family: "SFProText-Light";
+ font-size: 20px;
+ text-align: center;
+ letter-spacing: 3px;
  margin-right: 46px;
 }
 
@@ -105,18 +132,31 @@ and (-webkit-min-device-pixel-ratio: 2){
  }
 
 .writing-content h1 {
- font-family: "Archivo", monospace;
+ font-family:  "CircularStd-Black";
  letter-spacing: 18px;
  font-size: 36px;
 
 }
 
 .writing-content p {
- font-family: "Archivo", monospace;
+ font-family: "SFProText-Light";
 font-size: 20px;
 text-align: center;
     letter-spacing: 3px;
         margin-right: 31px;
+}
+
+
+.writing-content2 {
+
+        position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+        position: relative;
+    padding: 50px 30px 0 !important;
+    color: black;
+
+
 }
   }
 
@@ -129,24 +169,173 @@ text-align: center;
 .container3 {
 margin-top: 10%;
     width: 51%;
+
  }
 
 
-.writing-content2 {
-    z-index: 1;
-        position: relative;
-    color: white;
-        text-align: center;
 
+
+.writing-content2 {
+
+        position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+        position: relative;
+    padding: 73px 97px 0;
+    color: black;
 
 
 }
 
 
-.writing-content2 p {
 
-font-size: 25px;
-padding-top: 43px;
+
+
+
+.writing-content2 h1 {
+   font-family: "CircularStd-Black";
+}
+
+.highlighted-red {
+color: #fd1015;
+    background: rgba(253,16,21,.1);
+}
+
+.writing-content2 p {
+font-family: "SFProText-Regular";
+font-size:  20px;
+    max-width: 520px;
+    color: #6f6d6f;
+    letter-spacing: .1px;
+    margin-bottom: 15px;
+}
+
+
+.writing-content3 {
+
+   position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 73px 97px 0;
+    color: white;
+    z-index: 1;
+}
+
+.writing-content4 {
+
+        position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+        position: relative;
+    padding: 73px 97px 0;
+    color: black;
+}
+
+
+.writing-content4 h1 {
+   font-family: "CircularStd-Black";
+}
+
+.highlighted-yellow {
+    color: #ffc65a;
+    background: #fff7e8;
+        padding: 0 10px;
+}
+
+.writing-content4 p {
+font-family: "SFProText-Regular";
+font-size:  20px;
+
+    color: #6f6d6f;
+    letter-spacing: .1px;
+    margin-bottom: 15px;
+}
+
+
+.cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+    color: black;
+
+}
+
+
+
+
+
+
+
+.cards-container .press-card {
+    padding: 10px 50px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 500px;
+    flex: 1 0 500px;
+    margin: 20px;
+    height: 198px;
+    margin-top: 0;
+      box-shadow: 0 15px 35px rgba(126,87,88,.1), 0 5px 15px rgba(0,0,0,.07);
+
+}
+
+.press-card h4 {
+    margin-bottom: 16px;
+    color: #0e0000;
+    font-size: 30px;
+}
+
+.press-card p {
+font-family: "SFProText-Regular";
+    font-size: 20px;
+    color: #6f6d6f;
+    letter-spacing: .1px;
+    margin-bottom: 15px;
+}
+
+
+.card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+ .card-content img {
+    margin-right: 20px;
+    height: 100px;
+  }
+
+
+
+
+
+
+ .cta-link {
+    margin-top: 16px;
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+     font-family: "SFProText-Light";
+    }
+
+.cta-link .carret {
+    position: relative;
+    height: 20px;
+    top: 6px;
+    left: 10px;
+    -webkit-transform: scale(1.6) rotate(-90deg);
+    transform: scale(1.6) rotate(-90deg);
+    }
+
+    .cta-link .carret path {
+    stroke: #ff0106!important;
 }
 
 .underline {
@@ -156,6 +345,92 @@ background-color: red;
 .little-title {
   color: red;
 }
+
+
+.redwrapper {
+    width: 100%;
+    margin-top: 4%;
+    background-color: #fd1015;
+    padding: 55px 100px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+
+
+:root {
+  /* Base font size */
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.spec{
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+
+
+
+
+
+
+
+.gallery-image {
+
+margin-bottom: 35px;
+    margin-left: 50px;
+        height: 40%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+      border-radius: 10px;
+
+}
+
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling.
+
+*/
+.headpart
+{
+  margin-top: 8%;
+}
+.partner {
+
+display: flex;
+flex-direction: row;
+}
+
+
+
+.headpart h1 {
+ font-family:  "CircularStd-Black";
+
+ font-size: 36px;
+ color: black;
+
+}
+
+
+
 
 
 #typed {
@@ -177,6 +452,10 @@ font-size: 24px;
 
 }
 
+.cta2 {
+    position: relative;
+}
+
 .btnform {
     position: relative;
     margin-left: 3px;
@@ -186,11 +465,13 @@ font-size: 24px;
     /* color: #fff; */
     background-color: red;
     border-color: red;
+    font-family: SFProText-Bold;
+
 }
 
 
 .footer {
-       background: transparent;
+       background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
