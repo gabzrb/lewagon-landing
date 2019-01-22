@@ -64,6 +64,7 @@ h1, h2, h3, h4 {
 
 }
 
+
 .color-overlay {
    background-color: #5f460f;
     top: 0;
@@ -95,6 +96,16 @@ justify-content: center;
 
 }
 
+
+.video-content2 {
+  position: fixed;
+display: block;
+align-content: center;
+justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+}
 
 
 .writing-content {
@@ -1079,6 +1090,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   display: none;
 }
 
+
 @media screen and (max-width: 768px) {
   .navbar-header {
     width: 100%;
@@ -1097,6 +1109,18 @@ a.back-to-top:hover, a.back-to-top:focus {
   .slicknav_menu {
     display: block;
   }
+
+  .svg-content svg {
+    width: 359px;
+    padding-left: 15px;
+  }
+
+  .writing-content4  {
+        margin: 0 auto;
+    position: relative;
+    padding: 46px 20px !important;
+    color: black;
+  }
   .slicknav_nav .active a {
     background: #E91E63;
     color: #fff;
@@ -1108,6 +1132,21 @@ a.back-to-top:hover, a.back-to-top:focus {
     outline: none;
     background: #f8f9fa;
   }
+
+
+.banner3 {
+    text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 }
 
 
